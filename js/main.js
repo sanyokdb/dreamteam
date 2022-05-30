@@ -21444,7 +21444,6 @@ tpl:'<div class="fancybox-share"><h1>{{SHARE}}</h1><p><a class="fancybox-share__
 
 // Импортируем другие js-файлы
 $(function () {
-
   // Navbar scroll class
   $(window).scroll(function () {
     if ($(this).scrollTop() > 0) {
@@ -21475,15 +21474,15 @@ $(function () {
     },
   });
 
-  const reviewSlider = new Swiper('.review-slider', {
+  const reviewSlider = new Swiper(".review-slider", {
     loop: true,
     autoplay: {
       delay: 5000,
       disableOnInteraction: false,
     },
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
     },
   });
 
@@ -21492,7 +21491,20 @@ $(function () {
     speed: 0.6,
   });
 
-  new WOW().init();
+  // ScrollTop
+  $(window).scroll(function () {
+    if ($(window).scrollTop() > 200) {
+      $(".scrollup").show();
+    } else {
+      $(".scrollup").hide();
+    }
+  });
+  $(".scrollup").click(function () {
+    $("html, body").animate({ scrollTop: 0 }, 600);
+    return false;
+  });
 
+  // WOW JS
+  new WOW().init();
 });
 

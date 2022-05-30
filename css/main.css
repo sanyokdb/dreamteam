@@ -12320,3 +12320,28 @@ img {
 .footer-bottom a:hover {
   color: rgba(var(--bs-white-rgb), 0.7);
 }
+
+.scrollup {
+  position: fixed;
+  color: var(--bs-white);
+  background-color: var(--color-accent);
+  right: 15px;
+  bottom: 15px;
+  width: 40px;
+  height: 40px;
+  line-height: 36px;
+  border-radius: 4px;
+  cursor: pointer;
+  display: none;
+  text-align: center;
+  z-index: 10;
+  transition: var(--transition);
+}
+.scrollup svg {
+  width: auto;
+  height: 28px;
+  color: var(--bs-white);
+}
+.scrollup:hover {
+  opacity: 0.9;
+}
