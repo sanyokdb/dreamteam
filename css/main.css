@@ -11955,6 +11955,17 @@ img {
   opacity: 1;
 }
 
+.review-slider .review-card {
+  text-align: center;
+}
+.review-slider .review-card .rating {
+  justify-content: center;
+}
+.review-slider .review-card p {
+  width: 80%;
+  margin: 0 auto 1rem auto;
+}
+
 .review-card .avatar {
   width: 100px;
   height: 100px;
@@ -12300,17 +12311,6 @@ img {
     opacity: 0;
   }
 }
-.home-review .review-card {
-  text-align: center;
-}
-.home-review .review-card .rating {
-  justify-content: center;
-}
-.home-review .review-card p {
-  width: 80%;
-  margin: 0 auto 1rem auto;
-}
-
 .page-header {
   position: relative;
   padding-top: 6.4rem;
