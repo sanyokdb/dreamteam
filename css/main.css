@@ -12028,6 +12028,27 @@ img {
   width: 24px;
 }
 
+.pagination {
+  justify-content: space-between;
+}
+
+.page-item:not(.paper) {
+  display: none;
+}
+
+@media (min-width: 576px) {
+  .pagination {
+    justify-content: center;
+  }
+
+  .page-item:not(.paper) {
+    display: block;
+  }
+
+  .page-paper {
+    display: none;
+  }
+}
 .navbar-main {
   border-bottom: 1px solid rgba(var(--bs-white-rgb), 0.2);
   transition: var(--transition);

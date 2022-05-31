@@ -57,6 +57,163 @@
 <main class="main">
   <div class="container py-5">
     
+    <div class="review-card border-bottom py-4 mb-4">
+      <div class="d-flex align-items-center mb-4">
+        <div class="avatar flex-shrink-0">
+          <img src="img/review/alina-muratova.jpg" alt="Alina Muratova" width="100" height="100">
+          <div class="quote"></div>
+        </div>
+        <div class="ms-3">
+          <h5 class="mb-2">Alina Muratova</h5>
+          <div class="rating rating-5">
+            <span title="Terrible">Terrible</span>
+            <span title="Badly">Badly</span>
+            <span title="Satisfactorily">Satisfactorily</span>
+            <span title="Good">Good</span>
+            <span title="Fine">Fine</span>
+          </div>
+        </div>
+      </div>
+      <p class="mb-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam commodi hic eaque officiis voluptatum nihil facere? Corrupti consequuntur nostrum quas rem nesciunt repellat tenetur eveniet iure quasi, molestiae quidem voluptatibus recusandae soluta quo explicabo qui vero magnam natus delectus cum.</p>
+    </div>
+
+    <div class="review-card border-bottom py-4 mb-4">
+      <div class="d-flex align-items-center mb-4">
+        <div class="avatar flex-shrink-0">
+          <img src="img/review/avatar-no.svg" alt="Anonymous ANONYMOV" width="100" height="100">
+          <div class="quote"></div>
+        </div>
+        <div class="ms-3">
+          <h5 class="mb-2">Anonymous ANONYMOV</h5>
+          <div class="rating rating-2">
+            <span title="Terrible">Terrible</span>
+            <span title="Badly">Badly</span>
+            <span title="Satisfactorily">Satisfactorily</span>
+            <span title="Good">Good</span>
+            <span title="Fine">Fine</span>
+          </div>
+        </div>
+      </div>
+      <p class="mb-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam commodi hic eaque officiis voluptatum nihil facere? Corrupti consequuntur nostrum quas rem nesciunt repellat tenetur eveniet iure quasi, molestiae quidem voluptatibus recusandae soluta quo explicabo qui vero magnam natus delectus cum.</p>
+    </div>
+
+    <div class="review-card border-bottom py-4 mb-4">
+      <div class="d-flex align-items-center mb-4">
+        <div class="avatar flex-shrink-0">
+          <img src="img/review/marina-zakharchuk.jpg" alt="Marina Zakharchuk" width="100" height="100">
+          <div class="quote"></div>
+        </div>
+        <div class="ms-3">
+          <h5 class="mb-2">Marina Zakharchuk</h5>
+          <div class="rating rating-5">
+            <span title="Terrible">Terrible</span>
+            <span title="Badly">Badly</span>
+            <span title="Satisfactorily">Satisfactorily</span>
+            <span title="Good">Good</span>
+            <span title="Fine">Fine</span>
+          </div>
+        </div>
+      </div>
+      <p class="mb-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam commodi hic eaque officiis voluptatum nihil facere? Corrupti consequuntur nostrum quas rem nesciunt repellat tenetur eveniet iure quasi, molestiae quidem voluptatibus recusandae soluta quo explicabo qui vero magnam natus delectus cum.</p>
+    </div>
+
+    <div class="review-card border-bottom py-4 mb-4">
+      <div class="d-flex align-items-center mb-4">
+        <div class="avatar flex-shrink-0">
+          <img src="img/review/dima-varivodin.jpg" alt="Dima Varivodin" width="100" height="100">
+          <div class="quote"></div>
+        </div>
+        <div class="ms-3">
+          <h5 class="mb-2">Dima Varivodin</h5>
+          <div class="rating rating-4">
+            <span title="Terrible">Terrible</span>
+            <span title="Badly">Badly</span>
+            <span title="Satisfactorily">Satisfactorily</span>
+            <span title="Good">Good</span>
+            <span title="Fine">Fine</span>
+          </div>
+        </div>
+      </div>
+      <p class="mb-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam commodi hic eaque officiis voluptatum nihil facere? Corrupti consequuntur nostrum quas rem nesciunt repellat tenetur eveniet iure quasi, molestiae quidem voluptatibus recusandae soluta quo explicabo qui vero magnam natus delectus cum.</p>
+    </div>
+
+    <nav class="mt-5">
+      <ul class="pagination mb-0">
+        <li class="page-item paper disabled"><a class="page-link" href="#" title="«">«</a></li>
+        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item disabled"><a class="page-link" href="#">...</a></li>
+        <li class="page-item"><a class="page-link" href="#">12</a></li>
+        <li class="page-item paper page-paper"><a class="page-link" href="#">1 / 12</a></li>
+        <li class="page-item paper"><a class="page-link" href="#" title="»">»</a></li>
+      </ul>
+    </nav>
+
+    <div class="form-review mt-5">
+      <form action="#">
+
+        <div class="row">
+          <div class="col-md-auto">
+            <label class="avatar-upload js-avatar-upload mb-3">
+              <input class="avatar-upload__input js-avatar-upload__input" type="file" name="file" accept="image/*" />
+              <img class="avatar-upload__icon avatar-no" src="img/review/avatar-no.svg" alt="Загрузить фото">
+              <span class="avatar-upload__upload">Загрузить фото</span>
+              <span class="avatar-upload__delete"></span>
+            </label>
+          </div>
+          <div class="col-md">
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" name="name" id="name" placeholder="* Your name" required>
+              <label for="name">* Your name</label>
+            </div>
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control" name="email" id="email" placeholder="Email address">
+                <label for="email">Email address</label>
+              </div>
+          </div>
+          <div class="col-12">
+            <div class="form-floating mb-3">
+              <textarea class="form-control" style="height: 100px" name="message" id="message" rows="3" placeholder="* Write a message here" required></textarea>
+              <label for="message">* Write a message here</label>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="mb-3">
+              <div class="mb-1">* Rating</div>
+              <div class="rating rating-form">
+                <input type="radio" name="rating" value="1" id="rating1">
+                <input type="radio" name="rating" value="2" id="rating2">
+                <input type="radio" name="rating" value="3" id="rating3">
+                <input type="radio" name="rating" value="4" id="rating4">
+                <input type="radio" name="rating" value="5" id="rating5">
+                <label for="rating1" title="Terrible">Terrible</label>
+                <label for="rating2" title="Badly">Badly</label>
+                <label for="rating3" title="Satisfactorily">Satisfactorily</label>
+                <label for="rating4" title="Good">Good</label>
+                <label for="rating5" title="Fine">Fine</label>
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <div id="result-form">
+              <div class="alert alert-success alert-dismissible fade show" role="alert">
+                Success Alert!
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+              <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                Error warning!
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <input type="submit" value="Send Review" class="btn btn-primary py-2 px-4">
+          </div>
+        </div>
+      </form>
+    </div>
+
   </div>
 </main>
 
