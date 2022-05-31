@@ -21506,5 +21506,37 @@ $(function () {
 
   // WOW JS
   new WOW().init();
+
+
+  // avatar upload
+  class PhotoSubmission {
+    constructor() {
+      const inputs = document.querySelectorAll(".js-avatar-upload__input");
+      for (var i = 0; i < inputs.length; i++) {
+        inputs[i].addEventListener("change", this.uploadImage);
+      }
+    }
+    uploadImage(e) {
+      const fileInput = e.target;
+      const uploadBtn = fileInput.parentNode;
+      const deleteBtn = uploadBtn.childNodes[7];
+      const reader = new FileReader();
+      reader.onload = function (e) {
+        uploadBtn.setAttribute("style", `background-image: url('${e.target.result}');`);
+        uploadBtn.classList.add("avatar-upload--image");
+        fileInput.setAttribute("style", "display:none;");
+      };
+      reader.readAsDataURL(e.target.files[0]);
+      deleteBtn.addEventListener("click", () => {
+        uploadBtn.removeAttribute("style");
+        uploadBtn.classList.remove("avatar-upload--image");
+        setTimeout(() => {
+          fileInput.removeAttribute("style", "display:none;");
+        }, 200);
+      });
+    }
+  }  
+  new PhotoSubmission();
+
 });
 
