@@ -12418,8 +12418,7 @@ img {
   left: 0;
   bottom: 0;
   content: "";
-  background-color: #000;
-  opacity: 0.65;
+  background-color: rgba(var(--bs-dark-rgb), 0.75);
 }
 .page-header .container {
   position: relative;
